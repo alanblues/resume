@@ -1,0 +1,22 @@
+header {
+    border-bottom: 2px solid gainsboro;
+
+    .menu {
+        padding: 20px 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        a {
+            color: #757575;
+            // color: darken(red, 10%);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 19px;
+            // font-weight: bold;
+            &:hover {
+                color: #3273dc;
+            }
+        }
+    }
+}

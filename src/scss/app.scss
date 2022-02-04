@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+a { text-decoration: none; }
+
+.adaptative {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.apcard {
+    border: 1px solid gainsboro;
+    padding: 20px 20px 0 20px;
+    border-left: 2px solid #54B689;
+    border-radius: 4px;
+
+    &-company {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-bottom: -5px;
+
+        small {
+            margin-left: 8px;
+            color: #797D7F;
+            font-weight: bold;
+        }
+    }
+
+    &-time {
+        color: #797D7F;
+        top: -10px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .adaptative {
+        width: 80%;
+    }
+}
+
+@import './menu.scss';
+@import '../pages/Home/home.scss';
+@import '../components/Section/Section.scss';
+@import '../pages/Experience/experience.scss';
+@import '../pages//Skills//Skills.scss';
