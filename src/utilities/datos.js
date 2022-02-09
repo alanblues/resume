@@ -1,5 +1,4 @@
 const Datos = (function () {
-  var iva = 0.18;
 
   return {
     empleos: function () {

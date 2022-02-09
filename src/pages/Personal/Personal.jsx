@@ -9,15 +9,15 @@ export default function Personal() {
           <h2>Software Engineer</h2>
         </div>
         <div className="personal_nombre-datos">
-          <a href="">3317460383</a>
-          <a href="">dev.alanparra@gmail.com</a>
-          <a href="">Guadalajara, Jalisco</a>
+          <a href="/">3317460383</a>
+          <a href="/">dev.alanparra@gmail.com</a>
+          <a href="/">Guadalajara, Jalisco</a>
         </div>
       </div>
 
       <div className="personal_imagen">
         <div className="personal_imagen-img">
-          <img src="https://picsum.photos/200/300" />
+          <img src="https://picsum.photos/200/300" alt="myphoto" />
         </div>
 
         <div className="personal_imagen-descripcion">

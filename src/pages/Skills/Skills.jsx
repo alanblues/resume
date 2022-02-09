@@ -2,9 +2,7 @@ import React from "react";
 import Section from "../../components/Section/Section";
 import Datos from "../../utilities/datos";
 
-const valor = 90;
-export default function () {
-  console.log(Datos.habilidades());
+export default function Skills() {
   return (
     <div className="habilidad mt-4">
       <Section text="Main Professional Skills" />
