@@ -60,7 +60,9 @@ a { text-decoration: none!important; }
 
 @media only screen and (max-width: 1150px) {
     .adaptative {
-        width: 80%;
+        width: 90%;
+        margin: 30px auto;
+        // background-color: red;
     }
 }
 

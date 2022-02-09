@@ -5,12 +5,6 @@ import { Intereses } from "./Interests.style";
 export default function Interests() {
   return (
     <>
-      <Intereses>
-        <Section text="Languages" />
-        <span>Spanish (Native)</span>
-        <span>English (85%)</span>
-      </Intereses>
-
       <Intereses className="mt-4">
         <Section text="Languages" />
         <span>Spanish (Native)</span>
