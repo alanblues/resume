@@ -1,0 +1,27 @@
+.education {
+  border-top: 1px solid lighten(#797d7f, 40%);
+  padding-top: 30px;
+
+  article {
+    .education_title {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: -5px;
+      flex-wrap: wrap;
+
+      h2 {
+        font-size: 1rem;
+        color: #212f3d;
+        font-weight: 700;
+        margin-top: -5px;
+      }
+      span {
+        margin-top: -5px;
+      }
+    }
+    .education_period {
+      color: #797D7F;
+      font-size: 14px;
+    }
+  }
+}

@@ -2,14 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Ubuntu;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none!important; }
 
 .adaptative {
     width: 70%;
-    margin: 0 auto;
+    margin: 50px auto;
+
+    box-shadow: 0px 1px 9px gainsboro;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 5px;
 }
 
 .apcard {
@@ -21,19 +26,35 @@ a { text-decoration: none; }
     &-company {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
+        // align-items: baseline;
         margin-bottom: -5px;
+        flex-wrap: wrap;
+        align-items: baseline;
 
-        small {
-            margin-left: 8px;
-            color: #797D7F;
+        .role {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #212F3D;
+            margin-right: 8px;
+        }
+
+        span {
+            font-size: 15px;
+            margin-top: -5px;
+        }
+
+        .companyName {
+            // margin-left: 8px;
+            color: #599cc8;
             font-weight: bold;
+            margin-right: 8px;
         }
     }
 
     &-time {
         color: #797D7F;
         top: -10px;
+        font-size: 14px;
     }
 }
 
@@ -45,6 +66,9 @@ a { text-decoration: none; }
 
 @import './menu.scss';
 @import '../pages/Home/home.scss';
+@import '../pages/Personal/Personal.scss';
 @import '../components/Section/Section.scss';
 @import '../pages/Experience/experience.scss';
-@import '../pages//Skills//Skills.scss';
+@import '../pages/Skills/Skills.scss';
+@import '../pages/Interests/Interests.scss';
+@import '../pages/Education/Education.scss';

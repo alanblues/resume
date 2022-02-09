@@ -4,7 +4,7 @@ import MenuWeb from "../components/Header/Menu/MenuWeb";
 export default function Layout(props) {
   return (
     <>
-      <MenuWeb />
+      {/* <MenuWeb /> */}
       <div className="adaptative">
         {props.children}
       </div>
