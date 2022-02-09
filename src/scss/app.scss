@@ -66,6 +66,12 @@ a { text-decoration: none!important; }
     }
 }
 
+@media only screen and (max-width: 460px) {
+    .adaptative {
+        padding: 40px 25px
+    }
+}
+
 @import './menu.scss';
 @import '../pages/Home/home.scss';
 @import '../pages/Personal/Personal.scss';
