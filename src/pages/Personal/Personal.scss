@@ -70,12 +70,14 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 485px) {
   .datos_personales {
     flex-direction: column;
+    align-items: flex-start;
 
     &-datos {
       border-left: none;
+      padding-left: 0px;
     }
   }
 }

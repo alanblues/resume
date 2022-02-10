@@ -18,7 +18,7 @@ export default function Personal() {
       <div className="datos_profesionales">
         <div className="datos_profesionales-foto">
           {/* <img src="https://picsum.photos/200/300" alt="myphoto" /> */}
-          <img src={'./assets/img/yo.jpeg'} alt="image" />
+          <img src={"./assets/img/yo.jpeg"} alt="image" />
         </div>
 
         <div className="datos_profesionales-descripcion">
