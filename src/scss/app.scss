@@ -3,18 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-a { text-decoration: none!important; }
+body {
+    background-color: #F5F7FA!important;
+}
 
 .adaptative {
     width: 70%;
     margin: 50px auto;
-
     box-shadow: 0px 1px 9px gainsboro;
-    // margin-top: 20px;
-    // margin-bottom: 20px;
     padding: 40px;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 .apcard {
@@ -78,5 +77,4 @@ a { text-decoration: none!important; }
 @import '../components/Section/Section.scss';
 @import '../pages/Experience/experience.scss';
 @import '../pages/Skills/Skills.scss';
-@import '../pages/Interests/Interests.scss';
 @import '../pages/Education/Education.scss';

@@ -5,14 +5,14 @@ import { Intereses } from "./Interests.style";
 export default function Interests() {
   return (
     <>
-      <Intereses className="mt-4">
+      <Intereses>
         <Section text="Languages" />
         <span>Spanish (Native)</span>
         <span>English (85%)</span>
       </Intereses>
 
 
-      <Intereses className="intereses mt-4">
+      <Intereses>
         <Section text="Hobies" />
         <span>Technologies</span>
         <span>Sports</span>
@@ -20,7 +20,7 @@ export default function Interests() {
         <span>Music</span>
       </Intereses>
 
-      <Intereses className="intereses mt-4">
+      <Intereses>
         <Section text="Courses" />
         <span>Linux</span>
         <span>React+Strapi+Mongo</span>

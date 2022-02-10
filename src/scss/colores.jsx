@@ -1,3 +1,6 @@
 export const colores = {
-    secundario: '#797D7F'
+    principal: '#54B689',
+    titulos: '#212f3D',
+    secundario: '#797D7F',
+    linea: '#E1E2E3'
 }
