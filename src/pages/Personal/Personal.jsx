@@ -9,7 +9,7 @@ export default function Personal() {
           <h2>Software Engineer</h2>
         </div>
         <div className="datos_personales-datos">
-          <a href="3317460383">3317460383</a>
+          <a href="tel:3317460383">3317460383</a>
           <a href="mailto:dev.alanparra@gmail.com?subject=Hello world">dev.alanparra@gmail.com</a>
           <span>Guadalajara, Jalisco</span>
         </div>
