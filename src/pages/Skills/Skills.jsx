@@ -1,19 +1,27 @@
 import React from "react";
 import Section from "../../components/Section/Section";
 import Datos from "../../utilities/datos";
+import {
+  Habilidades,
+  GrupoHabilidades,
+  Detalle,
+  Nombre,
+  Progreso,
+  Nivel,
+} from "./Skills.style.js";
 
 export default function Skills() {
   return (
-    <div className="habilidad mt-4">
+    <Habilidades>
       <Section text="Main Professional Skills" />
 
-      <div className="row mt-3">
+      <GrupoHabilidades className="row">
         {Datos.habilidades().map((hab) => (
-          <div key={hab.id} className="habilidad_grupo col-sm-4">
-            <span>{hab.nombre}</span>
-            <div className="progress">
-              <div
-                className="progress-bar bg-info"
+          <Detalle key={hab.id} className="col-sm-4">
+            <Nombre>{hab.nombre}</Nombre>
+            <Progreso className="progress">
+              <Nivel
+                className="progress-bar"
                 role="progressbar"
                 style={{ width: hab.nivel + "%" }}
                 aria-valuenow="25"
@@ -21,11 +29,11 @@ export default function Skills() {
                 aria-valuemax="100"
               >
                 {hab.nivel}%
-              </div>
-            </div>
-          </div>
+              </Nivel>
+            </Progreso>
+          </Detalle>
         ))}
-      </div>
-    </div>
+      </GrupoHabilidades>
+    </Habilidades>
   );
 }

@@ -1,4 +1,44 @@
 .work {
-    border-top: 1px solid lighten(#797d7f, 40%);
-    padding-top: 30px;
+  border-top: 1px solid lighten(#797d7f, 40%);
+  padding-top: 30px;
+
+  .apcard {
+    border: 1px solid gainsboro;
+    padding: 20px 20px 0 20px;
+    border-left: 2px solid #54b689;
+    border-radius: 4px;
+
+    &-company {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: -5px;
+      flex-wrap: wrap;
+      align-items: baseline;
+
+      .role {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #212f3d;
+        margin-right: 8px;
+      }
+
+      span {
+        font-size: 15px;
+        margin-top: -5px;
+      }
+
+      .companyName {
+        // margin-left: 8px;
+        color: #599cc8;
+        font-weight: bold;
+        margin-right: 8px;
+      }
+    }
+
+    &-time {
+      color: #797d7f;
+      top: -10px;
+      font-size: 14px;
+    }
+  }
 }

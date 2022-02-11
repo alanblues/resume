@@ -24,7 +24,6 @@ export default function Experience() {
           </div>
           <div className="col-md-4 mt-3">
             <Interests />
-            {/* <Skills /> */}
           </div>
         </div>
       </section>

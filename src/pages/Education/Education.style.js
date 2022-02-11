@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { colores } from "../../scss/colores";
 
-export const SeccionEducacion = styled.div`
+export const Educacion = styled.section`
   border-top: 1px solid ${colores.linea};
   padding-top: 30px;
   margin-top: 1.5rem;
 `;
 
 export const GrupoTitulo = styled.article`
-    margin-top: ${props => props.mt}
+  margin-top: ${(props) => props.mt};
 `;
 
 export const Titulo = styled.div`
@@ -16,16 +16,17 @@ export const Titulo = styled.div`
   align-items: baseline;
   margin-bottom: -5px;
   flex-wrap: wrap;
+`;
 
-  h2 {
-    font-size: 1rem;
-    color: ${colores.titulo};
-    font-weight: 700;
-    margin-top: -5px;
-  }
-  span {
-    margin-top: -5px;
-  }
+export const Carrera = styled.h2`
+  font-size: 1rem;
+  color: ${colores.titulo};
+  font-weight: 700;
+  margin-top: -5px;
+`;
+
+export const Universidad = styled.span`
+  margin-top: -5px;
 `;
 
 export const Periodo = styled.span`

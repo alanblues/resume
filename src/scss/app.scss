@@ -1,79 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    background-color: #F5F7FA!important;
+  background-color: #f5f7fa !important;
 }
 
-.adaptative {
-    width: 70%;
-    margin: 50px auto;
-    box-shadow: 0px 1px 9px gainsboro;
-    padding: 40px;
-    border-radius: 5px;
-    background-color: #fff;
+input[type="text"] {
+//   color: #212f3d;
+//   color: lighten(#212f3d, 10%)!important;
+
+  &:focus {
+    box-shadow: none;
+    border-color: lighten(#54b689, 12%);
+  }
 }
 
-.apcard {
-    border: 1px solid gainsboro;
-    padding: 20px 20px 0 20px;
-    border-left: 2px solid #54B689;
-    border-radius: 4px;
-
-    &-company {
-        display: flex;
-        flex-direction: row;
-        // align-items: baseline;
-        margin-bottom: -5px;
-        flex-wrap: wrap;
-        align-items: baseline;
-
-        .role {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #212F3D;
-            margin-right: 8px;
-        }
-
-        span {
-            font-size: 15px;
-            margin-top: -5px;
-        }
-
-        .companyName {
-            // margin-left: 8px;
-            color: #599cc8;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-    }
-
-    &-time {
-        color: #797D7F;
-        top: -10px;
-        font-size: 14px;
-    }
+.form-control {
+    margin-top: 5px;
 }
 
-@media only screen and (max-width: 1150px) {
-    .adaptative {
-        width: 90%;
-        margin: 30px auto;
-        // background-color: red;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-    .adaptative {
-        padding: 40px 25px
-    }
-}
-
-@import './menu.scss';
-@import '../pages/Home/home.scss';
-@import '../pages/Personal/Personal.scss';
-@import '../components/Section/Section.scss';
-@import '../pages/Experience/experience.scss';
-@import '../pages/Skills/Skills.scss';
+@import "../pages/Personal/Personal.scss";
+@import "../components/Section/Section.scss";
+@import "../pages/Experience/experience.scss";

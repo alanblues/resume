@@ -11,7 +11,6 @@ export default function Interests() {
         <span>English (85%)</span>
       </Intereses>
 
-
       <Intereses>
         <Section text="Hobies" />
         <span>Technologies</span>
