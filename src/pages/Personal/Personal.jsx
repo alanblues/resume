@@ -5,7 +5,7 @@ export default function Personal() {
     <div className="datos">
       <div className="datos_personales">
         <div className="datos_personales-nombre">
-          <h1>Alan Larson</h1>
+          <h1>Alan Parra</h1>
           <h2>Software Engineer</h2>
         </div>
         <div className="datos_personales-datos">
