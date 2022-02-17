@@ -17,12 +17,12 @@ export default function Personal() {
 
       <div className="datos_profesionales">
         <div className="datos_profesionales-foto">
-          <img src={"./assets/img/yo.jpeg"} alt="image" />
+          <img src={"./assets/img/yo.jpeg"} alt="Fotografia" />
         </div>
 
         <div className="datos_profesionales-descripcion">
           <p>
-            Hello World! I am Alan Larson. I am passionate about software
+            Hello World! I am Alan Parra. I am passionate about software
             development web and mobile. I am a Front-end Developer I know how to
             work with Frameworks such as Bootstrap, Semantic, React, Angular
             etc.

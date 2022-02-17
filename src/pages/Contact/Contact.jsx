@@ -1,5 +1,5 @@
 import React from "react";
-import { Contacto, Formulario } from "./Contact.style";
+import { Contacto } from "./Contact.style";
 import Section from "../../components/Section/Section";
 
 export default function Contact() {
