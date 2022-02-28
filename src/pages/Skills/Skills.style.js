@@ -7,7 +7,16 @@ export const Habilidades = styled.section`
   margin-top: 1.5rem !important;
 `;
 
-export const GrupoHabilidades = styled.div`margin-top: 1rem;`;
+export const GrupoHabilidades = styled.div`
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
 
 export const Detalle = styled.article`margin-bottom: 10px;`;
 
@@ -21,4 +30,4 @@ export const Progreso = styled.div`
   font-size: 14px;
 `;
 
-export const Nivel = styled.div` background-color: #599cc8 !important;`;
+export const Nivel = styled.div`background-color: #599cc8 !important;`;

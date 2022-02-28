@@ -15,9 +15,9 @@ export default function Skills() {
     <Habilidades>
       <Section text="Main Professional Skills" />
 
-      <GrupoHabilidades className="row">
+      <GrupoHabilidades className="">
         {Datos.habilidades().map((hab) => (
-          <Detalle key={hab.id} className="col-sm-4">
+          <Detalle key={hab.id} className="">
             <Nombre>{hab.nombre}</Nombre>
             <Progreso className="progress">
               <Nivel

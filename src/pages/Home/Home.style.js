@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colores } from "../../scss/colores";
 
 export const Adaptativa = styled.main`
   width: 70%;
@@ -7,7 +6,7 @@ export const Adaptativa = styled.main`
   box-shadow: 0px 1px 9px gainsboro;
   padding: 40px;
   border-radius: 5px;
-  background-color: ${colores.blanco};
+  background-color: #fff;
 
   @media only screen and (max-width: 1150px) {
     width: 90%;

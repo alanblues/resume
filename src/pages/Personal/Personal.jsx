@@ -1,26 +1,38 @@
 import React from "react";
+import {
+  DatosPersonales,
+  Nombre,
+  Profesion,
+  DatosProfesionales,
+  Contacto,
+  Telefono,
+  Correo,
+  Ubicacion,
+  Fotografia,
+  Descripcion,
+} from "./Personal.style";
 
 export default function Personal() {
   return (
-    <div className="datos">
-      <div className="datos_personales">
-        <div className="datos_personales-nombre">
-          <h1>Alan Parra</h1>
-          <h2>Software Engineer</h2>
-        </div>
-        <div className="datos_personales-datos">
-          <a href="tel:3317460383">3317460383</a>
-          <a href="mailto:dev.alanparra@gmail.com?subject=Hello world">dev.alanparra@gmail.com</a>
-          <span>Guadalajara, Jalisco</span>
-        </div>
-      </div>
-
-      <div className="datos_profesionales">
-        <div className="datos_profesionales-foto">
-          <img src={"./assets/img/yo.jpeg"} alt="Fotografia" />
+    <>
+      <DatosPersonales>
+        <div>
+          <Nombre>Alan Parra</Nombre>
+          <Profesion>Software Engineer</Profesion>
         </div>
 
-        <div className="datos_profesionales-descripcion">
+        <Contacto>
+          <Telefono href="tel:3317460383">3317460383</Telefono>
+          <Correo href="mailto:dev.alanparra@gmail.com?subject=Hello world">
+            dev.alanparra@gmail.com
+          </Correo>
+          <Ubicacion>Guadalajara, Jalisco</Ubicacion>
+        </Contacto>
+      </DatosPersonales>
+
+      <DatosProfesionales>
+        <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
+        <Descripcion>
           <p>
             Hello World! I am Alan Parra. I am passionate about software
             development web and mobile. I am a Front-end Developer I know how to
@@ -34,9 +46,8 @@ export default function Personal() {
             Continue learning new technologies and put into practice my acquired
             knowledge in these years
           </p>
-          {/* <p>I make lots of modules, CLI tools and apps. Mostly Reac, Angular & Node</p> */}
-        </div>
-      </div>
-    </div>
+        </Descripcion>
+      </DatosProfesionales>
+    </>
   );
-}
+};

@@ -5,23 +5,9 @@
 }
 
 body {
-  background-color: #f5f7fa !important;
+  // background-color: #f5f7fa !important;
+  background-color: #eef2f7 !important;
 }
 
-input[type="text"] {
-//   color: #212f3d;
-//   color: lighten(#212f3d, 10%)!important;
-
-  &:focus {
-    box-shadow: none;
-    border-color: lighten(#54b689, 12%);
-  }
-}
-
-.form-control {
-    margin-top: 5px;
-}
-
-@import "../pages/Personal/Personal.scss";
 @import "../components/Section/Section.scss";
 @import "../pages/Experience/experience.scss";

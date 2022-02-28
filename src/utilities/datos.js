@@ -77,6 +77,16 @@ const Datos = (function () {
 
       return lista;
     },
+    cursos: () => {
+      return [
+        { id: 1, nombre: 'Linux Administrator - online'},
+        { id: 2, nombre: 'React JS, Strapi, Mongo' },
+        { id: 3, nombre: 'Semantic UI + React' },
+        { id: 4, nombre: 'Mongo, Express, Angular, Node' },
+        { id: 5, nombre: 'VUE' },
+        { id: 6, nombre: 'React Js' }
+      ]
+    }
   };
 })();
 
