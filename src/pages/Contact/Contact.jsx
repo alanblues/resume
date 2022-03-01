@@ -8,6 +8,7 @@ import {
 import Section from "../../components/Section/Section";
 import CustomInput from "../../components/CustomInput/CustomInput";
 
+ 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{3,20}$/, // Letras y espacios, pueden llevar acentos.
@@ -24,6 +25,7 @@ export default function Contact() {
 
   useEffect(()=> {
     activarBoton();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [nombre.valido, correo.valido, mensaje.valido]);
 
   const activarBoton = () => {
@@ -46,7 +48,7 @@ export default function Contact() {
         <Inputs>
           <CustomInput
             tipo="text"
-            label="Name"
+            label="Name:"
             id="name"
             leyendaError="You should fill name field"
             estado={nombre}
@@ -55,7 +57,7 @@ export default function Contact() {
           />
           <CustomInput
             tipo="email"
-            label="Email"
+            label="Email:"
             id="email"
             leyendaError="You should fill email field"
             estado={correo}
@@ -65,7 +67,7 @@ export default function Contact() {
         </Inputs>
         <CustomInput
           tipo="textarea"
-          label="Message"
+          label="Message:"
           id="message"
           leyendaError="You should fill message field"
           estado={mensaje}

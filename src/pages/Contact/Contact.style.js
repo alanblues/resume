@@ -50,7 +50,7 @@ export const Input = styled.input`
     box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
   }
 
-  ${props => props.valido == 'false' && css`
+  ${props => props.valido === 'false' && css`
     border: 1px solid ${colores.error} !important;
   `}
 `;
@@ -61,7 +61,7 @@ export const Label = styled.label`
   min-height: 30px;
   cursor: pointer;
 
-  ${props => props.valido == 'false' && css`
+  ${props => props.valido === 'false' && css`
     color: ${colores.error};
   `}
 `;
@@ -72,11 +72,11 @@ export const LeyendaError = styled.p`
   color: ${colores.error};
   display: none;
 
-  ${props => props.valido == 'true' && css`
+  ${props => props.valido === 'true' && css`
     display: true;
   `}
 
-  ${props => props.valido == 'false' && css`
+  ${props => props.valido === 'false' && css`
     display: block;
   `}
 `;
@@ -94,7 +94,7 @@ export const TesArea = styled.textarea`
     outline: none;
     box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
   }
-  ${props => props.valido == 'false' && css`
+  ${props => props.valido === 'false' && css`
     border: 1px solid ${colores.error} !important;
   `}
 `;
@@ -108,12 +108,12 @@ export const IconoValidacion = styled(FontAwesomeIcon)`
   color: ${colores.error};
   opacity: 0;
 
-  ${props => props.valido == 'false' && css`
+  ${props => props.valido === 'false' && css`
     opacity: 1;
     color: ${colores.error}
   `}
 
-  ${props => props.valido == 'true' && css`
+  ${props => props.valido === 'true' && css`
     opacity: 1;
     color: ${colores.exito}
   `}
