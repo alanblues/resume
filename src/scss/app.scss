@@ -1,3 +1,5 @@
+@import "../pages/Experience/experience.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,5 @@
 body {
   // background-color: #f5f7fa !important;
   background-color: #eef2f7 !important;
+  font-family: 'Roboto', sans-serif!important; 
 }
-
-@import "../components/Section/Section.scss";
-@import "../pages/Experience/experience.scss";

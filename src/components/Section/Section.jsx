@@ -1,5 +1,14 @@
-import Reac from 'react';
+import styled from "styled-components";
+import { colores } from '../../scss/colores';
 
-const Section = ({text}) => <h3 className="section-title">{text}</h3>
+const Seccion = styled.h3`
+    border-left: 5px solid ${colores.principal};
+    padding-left: 10px;
+    color: ${colores.principal};
+    font-size: 25px;
+    letter-spacing: -1.5px;
+`;
+
+const Section = ({text}) => <Seccion>{text}</Seccion>
 
 export default Section;

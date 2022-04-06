@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../../components/Section/Section";
 import Datos from "../../utilities/datos";
 import Interests from "../Interests/Interests";
-import Skills from "../Skills/Skills";
 
 export default function Experience() {
   return (
@@ -22,7 +21,7 @@ export default function Experience() {
               </div>
             ))}
           </div>
-          <div className="col-md-4 mt-3">
+          <div className="work_interest col-md-4">
             <Interests />
           </div>
         </div>
