@@ -23,7 +23,7 @@ export const Nombre = styled.h1`
 export const Profesion = styled.h2`
   color: ${colores.titulo};
   font-size: 20px;
-  margin-top: -5px;
+  margin-top: -10px;
 `;
 
 export const Contacto = styled.div`
