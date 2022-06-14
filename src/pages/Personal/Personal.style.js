@@ -6,7 +6,7 @@ export const DatosPersonales = styled.section`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid ${colores.linea};
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   @media only screen and (max-width: 485px) {
     flex-direction: column;
