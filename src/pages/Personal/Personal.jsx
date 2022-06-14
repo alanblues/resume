@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   DatosPersonales,
   Nombre,
@@ -22,11 +24,18 @@ export default function Personal() {
         </div>
 
         <Contacto>
-          <Telefono href="tel:3317460383">3317460383</Telefono>
-          <Correo href="mailto:dev.alanparra@gmail.com?subject=Hello world">
-            dev.alanparra@gmail.com
+          <Telefono>
+            <FontAwesomeIcon icon={faPhone} />&nbsp;&nbsp;
+            <a href="tel:3317460383">3317460383</a>
+          </Telefono>
+          <Correo>
+            <FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp;
+            <a href="mailto:dev.alanparra@gmail.com?subject=Hello world">dev.alanparra@gmail.com</a>
           </Correo>
-          <Ubicacion>Guadalajara, Jalisco</Ubicacion>
+          <Ubicacion>
+          <FontAwesomeIcon icon={faLocationDot} />&nbsp;&nbsp;
+            Guadalajara, Jalisco
+          </Ubicacion>
         </Contacto>
       </DatosPersonales>
 

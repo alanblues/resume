@@ -1,5 +1,5 @@
 import React from "react";
-import { faCheckCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faTimesCircle, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   Label,
   GrupoInput,

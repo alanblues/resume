@@ -38,20 +38,28 @@ export const Contacto = styled.div`
   }
 `;
 
-export const Telefono = styled.a`
+export const Telefono = styled.article`
   font-size: 15px;
   color: #797d7f;
-  &:hover {
-    color: #54b689;
+  a {
+    color: #797d7f;
+    &:hover {
+      color: #54b689;
+    }
   }
+  
 `;
 
-export const Correo = styled.a`
-  font-size: 15px;
+export const Correo = styled.article`
   color: #797d7f;
-  &:hover {
-    color: #54b689;
-  }
+  a {
+    font-size: 15px;
+    color: #797d7f;
+    &:hover {
+      color: #54b689;
+    }
+}
+  
 `;
 
 export const Ubicacion = styled.span`
@@ -72,7 +80,8 @@ export const DatosProfesionales = styled.section`
 
 export const Fotografia = styled.img`
   height: 200px;
-  border-radius: 50%;
+  border-radius: 30px 0 30px 30px;
+  border: 1px solid gainsboro;
 `;
 
 export const Descripcion = styled.div`

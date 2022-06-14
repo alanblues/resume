@@ -68,6 +68,8 @@ const Datos = (function () {
         { id: 2, nombre: "Angular", nivel: 90 },
         { id: 3, nombre: "Vue", nivel: 70 },
         { id: 4, nombre: "Redux", nivel: 85 },
+        { id: 12, nombre: "NgRx", nivel: 80 },
+        { id: 13, nombre: "Express", nivel: 75 },
         { id: 5, nombre: "Node js", nivel: 80 },
         { id: 11, nombre: "Express", nivel: 80 },
         { id: 6, nombre: "Typescript", nivel: 80 },
