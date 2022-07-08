@@ -11,7 +11,7 @@ export default function Home() {
       <Personal />
       <Education />
       <Experience />
-      <Skills />
+      {/* <Skills /> */}
     </Adaptativa>
   );
 }

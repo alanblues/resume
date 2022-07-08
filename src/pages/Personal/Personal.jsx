@@ -6,12 +6,11 @@ import {
   Nombre,
   Profesion,
   DatosProfesionales,
+  DatosContacto,
   Contacto,
-  Telefono,
-  Correo,
   Ubicacion,
   Fotografia,
-  Descripcion,
+  Informacion,
 } from "./Personal.style";
 
 export default function Personal() {
@@ -23,27 +22,27 @@ export default function Personal() {
           <Profesion>Software Engineer</Profesion>
         </div>
 
-        <Contacto>
-          <Telefono>
+        <DatosContacto>
+          <Contacto>
             <FontAwesomeIcon icon={faPhone} />&nbsp;&nbsp;
             <a href="tel:3317460383">3317460383</a>
-          </Telefono>
-          <Correo>
+          </Contacto>
+          <Contacto>
             <FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp;
             <a href="mailto:dev.alanparra@gmail.com?subject=Hello world">dev.alanparra@gmail.com</a>
-          </Correo>
+          </Contacto>
           <Ubicacion>
-          <FontAwesomeIcon icon={faLocationDot} />&nbsp;&nbsp;
+            <FontAwesomeIcon icon={faLocationDot} />&nbsp;&nbsp;
             Guadalajara, Jalisco
           </Ubicacion>
-        </Contacto>
+        </DatosContacto>
       </DatosPersonales>
 
       <DatosProfesionales>
         <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
-        <Descripcion>
+        <Informacion>
           <p>
-            Hello World! I am Alan Parra. I am passionate about software
+            Hello World, I am Alan Parra. I am passionate about software
             development web and mobile. I am a Front-end Developer I know how to
             work with Frameworks such as Bootstrap, Semantic, React, Angular
             etc.
@@ -55,7 +54,7 @@ export default function Personal() {
             Continue learning new technologies and put into practice my acquired
             knowledge in these years
           </p>
-        </Descripcion>
+        </Informacion>
       </DatosProfesionales>
     </>
   );

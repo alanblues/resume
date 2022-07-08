@@ -8,7 +8,7 @@ export const DatosPersonales = styled.section`
   border-bottom: 1px solid ${colores.linea};
   padding-bottom: 10px;
 
-  @media only screen and (max-width: 485px) {
+  @media only screen and (max-width: 540px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -26,40 +26,30 @@ export const Profesion = styled.h2`
   margin-top: -10px;
 `;
 
-export const Contacto = styled.div`
+export const DatosContacto = styled.div`
   display: flex;
   flex-direction: column;
   border-left: 1px solid ${colores.linea};
   padding-left: 15px;
 
-  @media only screen and (max-width: 485px) {
+  @media only screen and (max-width: 540px) {
     border-left: none;
     padding-left: 0px;
   }
 `;
 
-export const Telefono = styled.article`
+export const Contacto = styled.article`
   font-size: 15px;
   color: #797d7f;
   a {
     color: #797d7f;
+    text-decoration: none;
+    border-bottom: 1px solid ${colores.linea}; //#adb0b1;
     &:hover {
       color: #54b689;
+      border-color: #54b689;
     }
   }
-  
-`;
-
-export const Correo = styled.article`
-  color: #797d7f;
-  a {
-    font-size: 15px;
-    color: #797d7f;
-    &:hover {
-      color: #54b689;
-    }
-}
-  
 `;
 
 export const Ubicacion = styled.span`
@@ -69,12 +59,11 @@ export const Ubicacion = styled.span`
 
 export const DatosProfesionales = styled.section`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 30px;
 
   @media only screen and (max-width: 700px) {
     flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -84,11 +73,13 @@ export const Fotografia = styled.img`
   border: 1px solid gainsboro;
 `;
 
-export const Descripcion = styled.div`
+export const Informacion = styled.div`
   margin-left: 25px;
+  font-size: 15px;
 
   @media only screen and (max-width: 700px) {
     margin-left: 0px;
     margin-top: 15px;
+    text-align: justify;
   }
 `;

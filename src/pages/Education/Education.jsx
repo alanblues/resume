@@ -12,8 +12,8 @@ import {
 export default function Education() {
   return (
     <Educacion>
-      <Section text="Education" />
-      <GrupoTitulo mt="1.5rem">
+      <Section titulo="Education" />
+      <GrupoTitulo>
         <Titulo>
           <Carrera>Software Engineer&nbsp;</Carrera>
           <Universidad>Universidad Tecnológica del Sur de Sonora</Universidad>

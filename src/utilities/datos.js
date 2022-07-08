@@ -8,7 +8,7 @@ const Datos = (function () {
           compania: "Globant,",
           lugar: "Guadalajara, Jalisco",
           antiguedad: "October 2019 - Current",
-          descripcion: `Frontend Developer implementing technologies such as React JS, Angular, Express, Node js, consulting endpoints with axios, in addition to using the library such as Redux, Styled components, FlexBox etc.`,
+          descripcion: `Frontend Developer implementing technologies such as React, Angular, Express, Node, consulting endpoints with axios, in addition to using the library such as Redux, Styled components, FlexBox.`,
         },
         {
           id: 2,
@@ -16,8 +16,8 @@ const Datos = (function () {
           compania: "Anzen Digital,",
           lugar: "Guadalajara, Jalisco",
           antiguedad: "September 2018 - October 219",
-          descripcion: `Software Developer working with projects made in Angular 8, using its features such as Observables, using the HttpClient library to connect external services, as well as protecting routes with guard.
-          Manipulation of forms with Reactiveforms and layout with Bootstrap, SASS and HTML5`,
+          descripcion: `Software Developer working with projects made in Angular 9, using its features such as Observables, HttpClient, as well as protecting routes with guard.
+          form handling with Reactive forms and layout with Bootstrap, SASS and HTML5`,
         },
         {
           id: 3,
@@ -37,7 +37,7 @@ const Datos = (function () {
           descripcion: `Full Stack Developer using ASP.NET to build the API service and publish
             the endpoint in IIS.
             It used Razor, Lamda Expressions and with Angular 2 (Httpclient, Observables, Guards, RxJs,
-            ReactiveForms) build the views and validations of client side
+            Reactive forms) build the views and validations of client side
             In this part we consulting the endpoints`,
         },
         {
@@ -62,19 +62,23 @@ const Datos = (function () {
     },
     habilidades: () => {
       const lista = [
-        { id: 9, nombre: "HTML", nivel: 90 },
-        { id: 10, nombre: "CSS", nivel: 90 },
-        { id: 1, nombre: "React js", nivel: 90 },
-        { id: 2, nombre: "Angular", nivel: 90 },
-        { id: 3, nombre: "Vue", nivel: 70 },
-        { id: 4, nombre: "Redux", nivel: 85 },
-        { id: 12, nombre: "NgRx", nivel: 80 },
-        { id: 13, nombre: "Express", nivel: 75 },
-        { id: 5, nombre: "Node js", nivel: 80 },
-        { id: 11, nombre: "Express", nivel: 80 },
-        { id: 6, nombre: "Typescript", nivel: 80 },
-        { id: 7, nombre: "Semantic UI", nivel: 80 },
-        { id: 8, nombre: "Bootstrap", nivel: 90 },
+        { id: 1, nombre: "HTML", nivel: 90 },
+        { id: 2, nombre: "CSS", nivel: 80 },
+        { id: 3, nombre: "SASS", nivel: 85 },
+        { id: 4, nombre: "Bootstrap", nivel: 90 },
+        { id: 5, nombre: "Semantic UI", nivel: 80 },
+        // { id: 6, nombre: "keleton", nivel: 0 },
+        { id: 7, nombre: "JavaScript", nivel: 90 },
+        { id: 8, nombre: "Angular", nivel: 85 },
+        { id: 9, nombre: "React", nivel: 90 },
+        { id: 10, nombre: "Vue", nivel: 70 },
+        { id: 11, nombre: "Unit Testing - Jest", nivel: 70 },
+        { id: 12, nombre: "Typescrit", nivel: 80 },
+        { id: 13, nombre: "Node", nivel: 85 },
+        { id: 14, nombre: "Express", nivel: 80 },
+        { id: 15, nombre: "Strapi", nivel: 80 },
+        { id: 16, nombre: "Unit Testing - Cypress", nivel: 70 },
+        { id: 17, nombre: "Unit Testing - Super Test", nivel: 70 }
       ];
 
       return lista;
@@ -85,8 +89,9 @@ const Datos = (function () {
         { id: 2, nombre: 'React JS, Strapi, Mongo' },
         { id: 3, nombre: 'Semantic UI + React' },
         { id: 4, nombre: 'Mongo, Express, Angular, Node' },
-        { id: 5, nombre: 'VUE' },
-        { id: 6, nombre: 'React Js' }
+        { id: 5, nombre: 'React JS' },
+        { id: 6, nombre: 'VUE' },
+        { id: 7, nombre: 'Angular 10' }
       ]
     }
   };

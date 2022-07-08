@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { colores } from '../../scss/colores';
 
-const Seccion = styled.h3`
-    border-left: 5px solid ${colores.principal};
+const Titulo = styled.h3`
+    border-left: 3px solid ${colores.principal};
     padding-left: 10px;
     color: ${colores.principal};
     font-size: 25px;
     letter-spacing: -1.5px;
+    margin-bottom: 15px;
 `;
-
-const Section = ({text}) => <Seccion>{text}</Seccion>
+const Section = ({ titulo }) => <Titulo>{titulo}</Titulo>;
 
 export default Section;
