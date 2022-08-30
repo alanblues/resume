@@ -18,7 +18,7 @@ export default function Education() {
           <Carrera>Software Engineer&nbsp;</Carrera>
           <Universidad>Universidad Tecnológica del Sur de Sonora</Universidad>
         </Titulo>
-        <Periodo>September 2007 to January 2010</Periodo>
+        <Periodo>April 2011 - December 2012</Periodo>
       </GrupoTitulo>
 
       <GrupoTitulo mt="1rem">
@@ -26,7 +26,8 @@ export default function Education() {
           <Carrera>University Higher Technician in Software&nbsp;</Carrera>
           <Universidad>Universidad Tecnológica del Sur de Sonora</Universidad>
         </Titulo>
-        <Periodo>September 2007 to January 2010</Periodo>
+        <Periodo>September 2007 - August 2009</Periodo>
+        
       </GrupoTitulo>
     </Educacion>
   );

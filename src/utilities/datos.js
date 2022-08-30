@@ -15,7 +15,7 @@ const Datos = (function () {
           puesto: "Front-end Developer",
           compania: "Anzen Digital,",
           lugar: "Guadalajara, Jalisco",
-          antiguedad: "September 2018 - October 219",
+          antiguedad: "September 2018 - October 2019",
           descripcion: `Software Developer working with projects made in Angular 9, using its features such as Observables, HttpClient, as well as protecting routes with guard.
           form handling with Reactive forms and layout with Bootstrap, SASS and HTML5`,
         },
@@ -45,18 +45,10 @@ const Datos = (function () {
           puesto: "Software Engineer",
           compania: "SOA Software Factory",
           lugar: "Obregón, Sonora",
-          antiguedad: "January 2012 - April 2012",
-          descripcion: "",
-        },
-        {
-          id: 6,
-          puesto: "Software Engineer",
-          compania: "Data Alliance Antenna Company",
-          lugar: "Nogales, Sonora",
-          antiguedad: "May 2010 - August 2011",
-          descripcion:
-            "Charge of warehouse, recording inputs and outputs of products",
-        },
+          // antiguedad: "January 2012 - April 2012",
+          antiguedad: "May 2010 - August 2012",
+          descripcion: "Warehouse manager, registering inputs and outputs of products, in charge of creating inventory system",
+        }
       ];
       return todos;
     },
@@ -85,7 +77,7 @@ const Datos = (function () {
     },
     cursos: () => {
       return [
-        { id: 1, nombre: 'Linux Administrator - online'},
+        { id: 1, nombre: 'Linux Administrator - online' },
         { id: 2, nombre: 'React JS, Strapi, Mongo' },
         { id: 3, nombre: 'Semantic UI + React' },
         { id: 4, nombre: 'Mongo, Express, Angular, Node' },

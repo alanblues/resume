@@ -60,16 +60,18 @@ export const Ubicacion = styled.span`
 export const DatosProfesionales = styled.section`
   display: flex;
   margin-top: 30px;
+  align-items: center;
 
   @media only screen and (max-width: 700px) {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 `;
 
 export const Fotografia = styled.img`
-  height: 200px;
-  border-radius: 30px 0 30px 30px;
+  height: 180px;
+  // border-radius: 30px 0 30px 30px;
+  border-radius: 50%;
   border: 1px solid gainsboro;
 `;
 
