@@ -5,7 +5,7 @@ import Interests from "../Interests/Interests";
 
 export default function Experience() {
   return (
-    <section className="work mt-4">
+    <section className="work">
       <div className="row">
         <section className="col-md-8 mb-sm-15">
           <Section titulo="Work Experience" />

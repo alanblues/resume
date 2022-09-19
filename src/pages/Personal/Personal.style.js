@@ -8,9 +8,11 @@ export const DatosPersonales = styled.section`
   border-bottom: 1px solid ${colores.linea};
   padding-bottom: 10px;
 
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
     align-items: flex-start;
+
+    div:nth-child(1) { display: none; }
   }
 `;
 
@@ -32,7 +34,7 @@ export const DatosContacto = styled.div`
   border-left: 1px solid ${colores.linea};
   padding-left: 15px;
 
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 700px) {
     border-left: none;
     padding-left: 0px;
   }
@@ -60,7 +62,9 @@ export const Ubicacion = styled.span`
 export const DatosProfesionales = styled.section`
   display: flex;
   margin-top: 30px;
-  align-items: center;
+  // align-items: center;
+  border-bottom: 1px solid ${colores.linea};
+  padding-bottom: 10px;
 
   @media only screen and (max-width: 700px) {
     flex-direction: column;
@@ -70,18 +74,43 @@ export const DatosProfesionales = styled.section`
 
 export const Fotografia = styled.img`
   height: 180px;
-  // border-radius: 30px 0 30px 30px;
-  border-radius: 50%;
+  border-radius: 10px;
   border: 1px solid gainsboro;
 `;
 
-export const Informacion = styled.div`
+export const Descripcion = styled.div`
   margin-left: 25px;
   font-size: 15px;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
 
   @media only screen and (max-width: 700px) {
     margin-left: 0px;
     margin-top: 15px;
-    text-align: justify;
+    border-top: 1px solid gainsboro;
+    padding-top: 25px;
+
+    h2 { display: block; }
   }
 `;
+
+export const Caree = styled.div`
+  display: none;
+  text-align: center;
+
+  h1 {
+    margin: 10px 0 0;
+    color: ${colores.principal};
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+  // p { color: ${colores.secundario}; }
+
+  @media only screen and (max-width: 700px) {
+    display: block;
+  }
+`

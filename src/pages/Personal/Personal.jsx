@@ -10,7 +10,8 @@ import {
   Contacto,
   Ubicacion,
   Fotografia,
-  Informacion,
+  Descripcion,
+  Caree
 } from "./Personal.style";
 
 
@@ -41,7 +42,12 @@ export default function Personal() {
 
       <DatosProfesionales>
         <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
-        <Informacion>
+        <Caree>
+          <h1>Alan Parra</h1>
+          <p>Software Engineer & Web Developer</p>
+        </Caree>
+        <Descripcion>
+          <h2>About Me</h2>
           <p>
             Hello World, I am Alan Parra. I am passionate about software
             development web and mobile. I am a Front-end Developer I know how to
@@ -49,13 +55,7 @@ export default function Personal() {
             etc.
           </p>
 
-          <p>
-            Develop as a valuable and outstanding element that contributes
-            greatly to the optimal growth and evolution of your company.
-            Continue learning new technologies and put into practice my acquired
-            knowledge in these years
-          </p>
-        </Informacion>
+        </Descripcion>
       </DatosProfesionales>
     </>
   );

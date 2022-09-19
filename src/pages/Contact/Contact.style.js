@@ -3,14 +3,12 @@ import { colores } from "../../scss/colores";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Contacto = styled.section`
-  border-top: 1px solid ${colores.linea};
-  margin-top: 1.5rem;
-  padding-top: 30px;
+  margin-top: 30px;
 
   @media only screen and (max-width: 768px) {
     border-top: none;
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 5px;
   }
 `;
 
