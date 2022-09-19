@@ -1,19 +1,22 @@
 import React from "react";
-import Section from "../../components/Section/Section";
+import Collapsable from "../../components/Collapsable";
 import { Intereses, Habilidades, ListaHabilidades, Habilidad } from "./Interests.style";
+import { useBreakpoints } from '../../hooks/useBreakpoints';
 import Datos from '.././../utilities/datos';
 
 export default function Interests() {
+  const { isMobile } = useBreakpoints();
+
   return (
     <>
-      <Intereses>
-        <Section titulo="Languages" />
-        <Habilidad>Spanish (Native)</Habilidad>
-        <Habilidad>English (85%)</Habilidad>
-      </Intereses>
+      <Collapsable title="Languages">
+        <Intereses>
+          <Habilidad>Spanish (Native)</Habilidad>
+          <Habilidad>English (85%)</Habilidad>
+        </Intereses>
+      </Collapsable>
 
-      <Habilidades>
-        <Section titulo="Main Skills" />
+      <Collapsable title="Main Skills">
         <ListaHabilidades>
           {
             Datos.habilidades().map(hab => (
@@ -21,29 +24,31 @@ export default function Interests() {
             )
           }
         </ListaHabilidades>
-      </Habilidades>
+      </Collapsable>
 
-      <Intereses>
-        <Section titulo="Courses" />
-        <Habilidad>Linux</Habilidad>
-        <Habilidad>React, Strapi, Mongo</Habilidad>
-        <Habilidad>MEAN</Habilidad>
-        <Habilidad>MERN</Habilidad>
-        <Habilidad>NGINX</Habilidad>
-        <Habilidad>React</Habilidad>
-        <Habilidad>Angular 10</Habilidad>
-        <Habilidad>Vue X</Habilidad>
-        <Habilidad>CSS 3</Habilidad>
-        <Habilidad>Unit Testing - Jest</Habilidad>
-      </Intereses>
+      <Collapsable title="Courses">
+        <Intereses>
+          <Habilidad>Linux</Habilidad>
+          <Habilidad>React, Strapi, Mongo</Habilidad>
+          <Habilidad>MEAN</Habilidad>
+          <Habilidad>MERN</Habilidad>
+          <Habilidad>NGINX</Habilidad>
+          <Habilidad>React</Habilidad>
+          <Habilidad>Angular 10</Habilidad>
+          <Habilidad>Vue X</Habilidad>
+          <Habilidad>CSS 3</Habilidad>
+          <Habilidad>Unit Testing - Jest</Habilidad>
+        </Intereses>
+      </Collapsable>
 
-      <Intereses>
-        <Section titulo="Hobbies" />
-        <Habilidad>Technologies</Habilidad>
-        <Habilidad>Sports</Habilidad>
-        <Habilidad>Books</Habilidad>
-        <Habilidad>Music</Habilidad>
-      </Intereses>
+      <Collapsable title="Hobbies">
+        <Intereses>
+          <Habilidad>Technologies</Habilidad>
+          <Habilidad>Sports</Habilidad>
+          <Habilidad>Books</Habilidad>
+          <Habilidad>Music</Habilidad>
+        </Intereses>
+      </Collapsable>
     </>
   );
 }

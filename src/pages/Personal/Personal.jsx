@@ -13,6 +13,7 @@ import {
   Informacion,
 } from "./Personal.style";
 
+
 export default function Personal() {
   return (
     <>

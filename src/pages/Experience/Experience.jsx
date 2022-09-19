@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section className="work mt-4">
       <div className="row">
-        <div className="col-md-8">
+        <section className="col-md-8 mb-sm-15">
           <Section titulo="Work Experience" />
           {
             Datos.empleos().map((emp) =>
@@ -22,10 +22,10 @@ export default function Experience() {
               </article>
             )
           }
-        </div>
-        <aside className="work_interest col-md-4">
+        </section>
+        <section className="work_interest col-md-4">
           <Interests />
-        </aside>
+        </section>
       </div>
     </section>
   );

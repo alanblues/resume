@@ -3,21 +3,30 @@ const Datos = (function () {
     empleos: function () {
       const todos = [
         {
-          id: 1,
-          puesto: "Front-end Developer",
+          id: 6,
+          puesto: "Software Engineer",
           compania: "Globant,",
           lugar: "Guadalajara, Jalisco",
           antiguedad: "October 2019 - Current",
-          descripcion: `Frontend Developer implementing technologies such as React, Angular, Express, Node, consulting endpoints with axios, in addition to using the library such as Redux, Styled components, FlexBox.`,
+          descripcion: `Software Engineer implementing technologies in different environments,
+          In the Front end such as React, Vue 3, Svelte among others.
+          In the Backend, some such as Express, Node, MongoDB querying endpoints with axios, in addition to using the library such as Redux, Styled components, FlexBox Semantic UI, among others`,
         },
         {
-          id: 2,
+          id: 5,
           puesto: "Front-end Developer",
           compania: "Anzen Digital,",
           lugar: "Guadalajara, Jalisco",
-          antiguedad: "September 2018 - October 2019",
+          antiguedad: "January 2018 - October 2019",
           descripcion: `Software Developer working with projects made in Angular 9, using its features such as Observables, HttpClient, as well as protecting routes with guard.
           form handling with Reactive forms and layout with Bootstrap, SASS and HTML5`,
+        },
+        {
+          id: 4,
+          puesto: "Front-end Developer",
+          compania: "Intersys Consulting",
+          lugar: "Guadalajara, Jalisco",
+          antiguedad: "January 2018 - September 2018"
         },
         {
           id: 3,
@@ -29,7 +38,7 @@ const Datos = (function () {
             "Back end developer using ASP.NET, Razor, building APIs The application was hosting in Microsoft Teams",
         },
         {
-          id: 4,
+          id: 2,
           puesto: "Software Engineer",
           compania: "Novutek S.C.,",
           lugar: "Obregón, Sonora",
@@ -41,7 +50,7 @@ const Datos = (function () {
             In this part we consulting the endpoints`,
         },
         {
-          id: 5,
+          id: 1,
           puesto: "Software Engineer",
           compania: "SOA Software Factory",
           lugar: "Obregón, Sonora",
@@ -59,11 +68,11 @@ const Datos = (function () {
         { id: 3, nombre: "SASS", nivel: 85 },
         { id: 4, nombre: "Bootstrap", nivel: 90 },
         { id: 5, nombre: "Semantic UI", nivel: 80 },
-        // { id: 6, nombre: "keleton", nivel: 0 },
         { id: 7, nombre: "JavaScript", nivel: 90 },
         { id: 8, nombre: "Angular", nivel: 85 },
         { id: 9, nombre: "React", nivel: 90 },
-        { id: 10, nombre: "Vue", nivel: 70 },
+        { id: 10, nombre: "Vue3", nivel: 70 },
+        { id: 18, nombre: "Svelte3", nivel: 80 },
         { id: 11, nombre: "Unit Testing - Jest", nivel: 70 },
         { id: 12, nombre: "Typescrit", nivel: 80 },
         { id: 13, nombre: "Node", nivel: 85 },

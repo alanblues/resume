@@ -11,3 +11,9 @@ body {
   background-color: #eef2f7 !important;
   font-family: 'Roboto', sans-serif!important; 
 }
+
+.mb-sm-15 {
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
