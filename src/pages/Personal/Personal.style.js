@@ -61,14 +61,14 @@ export const Ubicacion = styled.span`
 
 export const DatosProfesionales = styled.section`
   display: flex;
-  margin-top: 30px;
-  // align-items: center;
   border-bottom: 1px solid ${colores.linea};
-  padding-bottom: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
 
   @media only screen and (max-width: 700px) {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0px;
   }
 `;
 
@@ -85,14 +85,13 @@ export const Descripcion = styled.div`
   h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
   }
 
   @media only screen and (max-width: 700px) {
     margin-left: 0px;
-    margin-top: 15px;
+    // margin-top: 15px;
     border-top: 1px solid gainsboro;
-    padding-top: 25px;
+    padding-top: 15px;
 
     h2 { display: block; }
   }

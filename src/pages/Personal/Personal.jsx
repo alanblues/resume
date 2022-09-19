@@ -49,10 +49,8 @@ export default function Personal() {
         <Descripcion>
           <h2>About Me</h2>
           <p>
-            Hello World, I am Alan Parra. I am passionate about software
-            development web and mobile. I am a Front-end Developer I know how to
-            work with Frameworks such as Bootstrap, Semantic, React, Angular
-            etc.
+            ¡Hello World! I am Alan Parra. I am passionate about software development, Website and mobile App.
+            I am a Front-end Developer I know how to work with Frameworks such as Nodejs, Bootstrap, Semantic UI, React, VueX, Angular.
           </p>
 
         </Descripcion>

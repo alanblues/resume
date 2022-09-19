@@ -3,8 +3,8 @@ import { colores } from "../../scss/colores";
 
 export const Educacion = styled.section`
   border-bottom: 1px solid ${colores.linea};
-  padding-bottom: 10px;
-  margin-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 20px;
 `;
 
 export const GrupoTitulo = styled.article`

@@ -6,9 +6,7 @@ export const Contacto = styled.section`
   margin-top: 30px;
 
   @media only screen and (max-width: 768px) {
-    border-top: none;
-    margin-top: 0;
-    padding-top: 5px;
+    margin-top: 0px;
   }
 `;
 
