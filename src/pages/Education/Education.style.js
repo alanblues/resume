@@ -32,4 +32,7 @@ export const Universidad = styled.span`
 export const Periodo = styled.span`
   color: ${colores.secundario};
   font-size: 14px;
+  // @media only screen and (max-width: 750px) {
+  //   background-color: pink;
+  // }
 `;

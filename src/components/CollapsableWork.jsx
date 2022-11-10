@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { useBreakpoints } from '../hooks/useBreakpoints';
-import Section from './Section/Section';
 import styled from "styled-components";
+import { useBreakpoints } from '../hooks/useBreakpoints';
 import { colores } from '../scss/colores';
 
 const Titulo = styled.h3`
+    display: flex;
     color: ${colores.principal};
     font-size: 20px;
     margin-bottom: 15px;
@@ -20,32 +20,29 @@ const Titulo = styled.h3`
     }
 `
 
-const Collapsable = ({ title, children }) => {
+const CollapsableWork = ({ title, children }) => {
     const [collapse, setCollapse] = useState('none');
     const { isMobile } = useBreakpoints();
 
     const onCollapse = () => { setCollapse(collapse === 'block' ? 'none' : 'block'); }
 
-    if (isMobile) {
-        return (
-            <article>
-                <Titulo onClick={onCollapse}>
-                    <FontAwesomeIcon icon={collapse === 'block' ? faChevronUp : faChevronDown} />
-                    {title}
-                </Titulo>
-                <div style={{ display: collapse }}>
-                    {children}
-                </div>
-            </article>
-        )
-    }
+    // if(isMobile) {
+    //     return (
+    //         <p>mobile</p>
+    //     )
+    // }
 
     return (
         <article>
-            <Section titulo={title} />
-            {children}
+            <Titulo onClick={onCollapse}>
+                <FontAwesomeIcon icon={collapse == 'block' ? faChevronUp : faChevronDown} />
+                {title}
+            </Titulo>
+            <div style={{ display: collapse }}>
+                {children}
+            </div>
         </article>
     );
-};
+}
 
-export default Collapsable;
+export default CollapsableWork;

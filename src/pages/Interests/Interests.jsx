@@ -1,11 +1,9 @@
 import React from "react";
 import Collapsable from "../../components/Collapsable";
 import { Intereses, Habilidades, ListaHabilidades, Habilidad } from "./Interests.style";
-import { useBreakpoints } from '../../hooks/useBreakpoints';
 import Datos from '.././../utilities/datos';
 
 export default function Interests() {
-  const { isMobile } = useBreakpoints();
 
   return (
     <>
