@@ -7,7 +7,7 @@ export const Educacion = styled.section`
   margin-top: 20px;
 `;
 
-export const GrupoTitulo = styled.article`
+export const GrupoTitulo = styled.div`
   margin-top: ${(props) => props.mt};
 `;
 

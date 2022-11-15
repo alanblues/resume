@@ -1,17 +1,15 @@
-import styled from "styled-components";
-
-export const Intereses = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-`;
-
-export const Habilidades = styled.article` margin-bottom: 20px; `;
+import styled, {css} from "styled-components";
 
 export const ListaHabilidades = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  ${props => props.envuelto && css`
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  `}
 `;
 
 export const Habilidad = styled.span`
