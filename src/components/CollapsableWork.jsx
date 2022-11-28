@@ -16,7 +16,7 @@ const Titulo = styled.h3`
 `;
 
 const CollapsableWork = ({ titulo, children }) => {
-    const [collapse, setCollapse] = useState(true);
+    const [collapse, setCollapse] = useState(false);
     const onCollapse = () => setCollapse(!collapse);
 
     return (

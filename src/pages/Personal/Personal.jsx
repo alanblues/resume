@@ -1,21 +1,17 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faLocationDot, faEnvelope, faChevronDown, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {
   DatosPersonales,
   Nombre,
   Profesion,
-  DatosProfesionales,
   DatosContacto,
   Contacto,
-  Ubicacion,
-  Fotografia,
-  Descripcion,
-  Caree
+  Ubicacion
 } from "./Personal.style";
-
+import About from '../About/About';
 
 export default function Personal() {
+
   return (
     <>
       <DatosPersonales>
@@ -39,22 +35,7 @@ export default function Personal() {
           </Ubicacion>
         </DatosContacto>
       </DatosPersonales>
-
-      <DatosProfesionales>
-        <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
-        <Caree>
-          <h1>Alan Parra</h1>
-          <p>Software Engineer & Web Developer</p>
-        </Caree>
-        <Descripcion>
-          <h2>About Me</h2>
-          <p>
-            ¡Hello World! I am Alan Parra. I am passionate about software development, Website and Mobile Apps.
-            I am a Front-end Developer I know how to work with tools such as Nodejs, Bootstrap, Semantic UI, React, VueX, Angular.
-          </p>
-
-        </Descripcion>
-      </DatosProfesionales>
+      <About />
     </>
   );
 };
