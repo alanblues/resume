@@ -22,7 +22,7 @@ export const Fotografia = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 169px;
+    width: 146px;
   }
 `;
 
