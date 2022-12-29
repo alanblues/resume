@@ -55,7 +55,6 @@ export const Carrera = styled.div`
     margin: 10px 0 0;
     color: ${colores.principal};
     letter-spacing: -1px;
-    font-weight: 700;
   }
 
   @media only screen and (max-width: 767px) {
