@@ -41,12 +41,12 @@ export const DatosContacto = styled.div`
 `;
 
 export const Contacto = styled.article`
-  font-size: 15px;
-  color: #797d7f;
+  font-size: 16px;
+  color: ${colores.secundario};
   a {
-    color: #797d7f;
+    color: ${colores.secundario};
     text-decoration: none;
-    border-bottom: 1px solid ${colores.linea}; //#adb0b1;
+    border-bottom: 1px solid ${colores.linea};;
     &:hover {
       color: #54b689;
       border-color: #54b689;

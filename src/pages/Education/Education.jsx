@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import Section from "../../components/Section/Section";
 import {
   Educacion,
@@ -10,23 +11,26 @@ import {
 } from "./Education.style";
 
 export default function Education() {
+  const { t } = useTranslation("global");
+  // console.log(i18n.language);
+
   return (
     <Educacion>
-      <Section titulo="Education" />
+      <Section titulo={t("label.education")} />
       <GrupoTitulo>
         <Titulo>
-          <Carrera>Software Engineer&nbsp;</Carrera>
+          <Carrera>{t("education.ing")}&nbsp;</Carrera>
           <Universidad>Universidad Tecnológica del Sur de Sonora</Universidad>
         </Titulo>
-        <Periodo>April 2011 - December 2012</Periodo>
+        <Periodo>{t("education.ing_period")}</Periodo>
       </GrupoTitulo>
 
       <GrupoTitulo mt="1rem">
         <Titulo>
-          <Carrera>University Higher Technician in Software&nbsp;</Carrera>
+          <Carrera>{t("education.tsu")}&nbsp;</Carrera>
           <Universidad>Universidad Tecnológica del Sur de Sonora</Universidad>
         </Titulo>
-        <Periodo>September 2007 - August 2009</Periodo>
+        <Periodo>{t("education.tsu_period")}</Periodo>
         
       </GrupoTitulo>
     </Educacion>

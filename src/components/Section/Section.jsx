@@ -6,7 +6,7 @@ const Titulo = styled.h3`
     padding-left: 10px;
     color: ${colores.principal};
     font-size: 25px;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     margin-bottom: 15px;
 `;
 const Section = ({ titulo }) => <Titulo>{titulo}</Titulo>;

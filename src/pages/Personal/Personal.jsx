@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faLocationDot, faEnvelope, faChevronDown, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   DatosPersonales,
   Nombre,
@@ -8,16 +8,17 @@ import {
   Contacto,
   Ubicacion
 } from "./Personal.style";
-import About from '../About/About';
+import { useTranslation } from 'react-i18next';
 
 export default function Personal() {
+  const { t } = useTranslation("global");
 
   return (
     <>
       <DatosPersonales>
         <div>
           <Nombre>Alan Parra</Nombre>
-          <Profesion>Software Engineer</Profesion>
+          <Profesion>{t("personal.caree")}</Profesion>
         </div>
 
         <DatosContacto>
@@ -35,7 +36,6 @@ export default function Personal() {
           </Ubicacion>
         </DatosContacto>
       </DatosPersonales>
-      <About />
     </>
   );
 };

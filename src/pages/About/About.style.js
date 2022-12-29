@@ -34,7 +34,18 @@ export const Descripcion = styled.div`
     font-size: 1.5rem;
     font-weight: 700;
   }
+  article p {
+    margin-bottom: 8px;
+    text-align: justify;
+  }
 `;
+
+export const AcercaMi = styled.article`
+  p {
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+`
 
 export const Carrera = styled.div`
   display: none;

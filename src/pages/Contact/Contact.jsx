@@ -14,7 +14,6 @@ export default function Contact() {
   const [correo, setCorreo] = useState({ campo: '', valido: null });
   const [mensaje, setMensaje] = useState({ campo: '', valido: null });
 
-
   useEffect(() => {
     activarBoton();
     // eslint-disable-next-line react-hooks/exhaustive-deps

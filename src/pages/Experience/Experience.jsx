@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Section from "../../components/Section/Section";
 import Datos from "../../utilities/datos";
 import Interests from "../Interests/Interests";
@@ -12,11 +13,13 @@ import {
 
 export default function Experience() {
   const { isMobile } = useBreakpoints();
+  const { t } = useTranslation("global");
+
   return (
     <ExperienciaIntereses>
       <div className="row">
         <section className="col-md-8 mb-sm-15">
-          <Section titulo="Work Experience" />
+          <Section titulo={t("label.education")} />
           {isMobile ?
             Datos.empleos().map(emp =>
               <CollapsableWork key={emp.id} titulo={

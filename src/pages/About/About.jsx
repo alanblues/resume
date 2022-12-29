@@ -1,42 +1,10 @@
 import React, { useState } from 'react';
-import { DatosProfesionales, Fotografia, Descripcion, Carrera } from './About.style';
+import { useTranslation } from 'react-i18next';
+import { DatosProfesionales, Fotografia, Descripcion, AcercaMi, Carrera } from './About.style';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useBreakpoints } from "../../hooks/useBreakpoints";
-
-export default function Personal() {
-    const { isMobile } = useBreakpoints();
-
-    return (
-        <DatosProfesionales>
-            <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
-            <Carrera>
-                <h1>Alan Parra</h1>
-                <p>Software Engineer & Web Developer</p>
-            </Carrera>
-            {
-                isMobile ? (
-                    <Collapsable>
-                        <p>
-                            ¡Hello World! I am Alan Parra. I am passionate about software development, Website and Mobile Apps.
-                            I am a Front-end Developer I know how to work with tools such as Nodejs, Bootstrap, Semantic UI, React, VueX, Angular.
-                        </p>
-                    </Collapsable>
-
-                ) :
-                    <Descripcion>
-                        <h2>About Me</h2>
-                        <p>
-                            ¡Hello World! I am Alan Parra. I am passionate about software development, Website and Mobile Apps.
-                            I am a Front-end Developer I know how to work with tools such as Nodejs, Bootstrap, Semantic UI, React, VueX, Angular.
-                        </p>
-                    </Descripcion>
-            }
-
-        </DatosProfesionales>
-    )
-};
 
 const Titulo = styled.h3`
     display: flex;
@@ -51,17 +19,48 @@ const Titulo = styled.h3`
     }
 `;
 
+export default function Personal() {
+    const { isMobile } = useBreakpoints();
+    const { t } = useTranslation("global");
+    const [para] = useState("<p style='color: red'>hola mundo</p><p>hola mundo dos</p>");
+    return (
+        <DatosProfesionales>
+            <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
+            <Carrera>
+                <h1>Alan Parra</h1>
+                <p>{t("personal.caree")}</p>
+            </Carrera>
+            {
+                !isMobile ? (
+                    <Descripcion>
+                        <h2>{t("personal.about_title")}</h2>
+                        <article dangerouslySetInnerHTML={{__html: t("personal.about_text")}}></article>
+                    </Descripcion>
+                ) :
+                    <Collapsable>
+                        <AcercaMi
+                            dangerouslySetInnerHTML={{__html: t("personal.about_text")}}>
+                        </AcercaMi>
+                    </Collapsable>
+            }
+        </DatosProfesionales>
+    )
+};
+
 const Collapsable = ({ children }) => {
     const [collapse, setCollapse] = useState(true);
     const onCollapse = () => setCollapse(!collapse);
+    const { t } = useTranslation("global");
 
     return (
         <article>
             <Titulo onClick={onCollapse}>
                 <FontAwesomeIcon icon={collapse ? faChevronRight : faChevronDown} />
-                <h2>About me</h2>
+                <h2>{t("personal.about_title")}</h2>
             </Titulo>
-            {collapse && <>{children}</>}
+            <>
+                {children}
+            </>
         </article>
     );
 }

@@ -1,0 +1,26 @@
+{
+    "personal": {
+        "caree": "Software Engineer",
+        "about_title": "About me",
+        "about_text": "<p>Hello World! I'm Alan Parra, I'm passionate about developing software, websites and mobile applications.</p><p>I am a Front-end Developer who works with tools like Nodejs, Semantic UI, React, Vue, Angular among others.</p>"
+    },
+    "education": {
+        "title": "Education",
+        "ing": "Software Engineer",
+        "ing_period": "April 2011 - December 2012",
+        "tsu": "University Higher Technician",
+        "tsu_period": "September 2007 - August 2009"
+    },
+    "label": {
+        "education": "Education",
+        "experience": "Work Experience",
+        "languages": "Languages",
+        "skills": "Main Skills",
+        "courses": "Courses",
+        "hobbies": "Hobbies"
+    },
+    "idiom": {
+        "spanish": "Spanish (Native)",
+        "english": "English"
+    }
+}

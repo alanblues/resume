@@ -1,17 +1,22 @@
 import React from "react";
 import { Adaptativa } from './Home.style';
+import Personal from "../Personal/Personal";
+import About from '../About/About';
 import Education from "../Education/Education";
 import Experience from "../Experience/Experience";
-import Personal from "../Personal/Personal";
-// import Contact from "../Contact/Contact";
+
+import Idioms from "../../components/Idioms/Idioms";
 
 export default function Home() {
   return (
-    <Adaptativa>
-      <Personal />
-      <Education />
-      <Experience />
-      {/* <Contact /> */}
-    </Adaptativa>
+    <>
+      <Idioms />
+      <Adaptativa>
+        <Personal />
+        <About />
+        <Education />
+        <Experience />
+      </Adaptativa>
+    </>
   );
 }
