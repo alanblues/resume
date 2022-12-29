@@ -58,9 +58,7 @@ const Collapsable = ({ children }) => {
                 <FontAwesomeIcon icon={collapse ? faChevronRight : faChevronDown} />
                 <h2>{t("personal.about_title")}</h2>
             </Titulo>
-            <>
-                {children}
-            </>
+            {collapse && <>{children}</>}
         </article>
     );
 }

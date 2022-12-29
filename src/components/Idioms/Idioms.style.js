@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { colores } from "../../scss/colores";
 
-
 export const Lenguajes = styled.section`
     width: 70%;
     box-shadow: 0px 1px 9px gainsboro;
@@ -23,22 +22,22 @@ export const Lenguaje = styled.h2`
     color: #969999;
     padding: 8px 10px;
     font-size: 18px;
-    font-weight: 700;
     border-radius: 4px;
     cursor: pointer;
-    // color: ${colores.secundario};
-    // font-size: 20px;
-    // font-weight: bold;
-    
 
     ${props => props.lan === true && css`
       background-color: ${colores.principal};
       color: #fff;
+      &:hover {
+        background-color: ${colores.principal_hover};
+      }
     `}
 
-    // &:hover {
-    //   color: ${colores.principal};
-    // }
+    ${props => props.lan === false && css`
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    `}
 
     &:first-child {
       margin-right: 10px;
