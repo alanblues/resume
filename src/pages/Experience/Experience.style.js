@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ExperienciaIntereses = styled.section`
-  padding-bottom: 10px;
   margin-top: 20px;
   @media only screen and (max-width: 768px) {
     border-bottom: 0px;

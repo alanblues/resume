@@ -27,7 +27,7 @@ export default function Personal() {
         <DatosProfesionales>
             <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
             <Carrera>
-                <h1>Alan Parrad</h1>
+                <h1>Alan Parra</h1>
                 <p>{t("personal.caree")}</p>
             </Carrera>
             {

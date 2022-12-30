@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Adaptativa = styled.div`
   width: 70%;
-  margin: 15px auto 50px;
+  margin: 15px auto 20px;
   box-shadow: 0px 1px 9px gainsboro;
   padding: 40px;
   border-radius: 5px;
@@ -10,7 +10,7 @@ export const Adaptativa = styled.div`
 
   @media only screen and (max-width: 1150px) {
     width: 90%;
-    margin: 15px auto 50px;
+    margin: 15px auto 20px;
   }
 
   @media only screen and (max-width: 460px) {
