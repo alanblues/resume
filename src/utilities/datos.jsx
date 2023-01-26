@@ -97,9 +97,21 @@ const Datos = (function () {
       { id: 14, nombre: "Express", nivel: 80 },
       { id: 15, nombre: "Strapi", nivel: 80 },
       { id: 16, nombre: "Unit Testing - Cypress", nivel: 70 },
-      { id: 17, nombre: "Unit Testing - Super Test", nivel: 70 }
+      { id: 17, nombre: "Unit Testing - Super Test", nivel: 70 },
+      { id: 18, nombre: "...", nivel: 100 }
+    ],
+    softskills: [
+      { id: 1, nombre: 'Verbal and written communication', nombreEs: 'Comunicación verbal y escrita' },
+      { id: 2, nombre: 'Productivity', nombreEs: 'Productivad' },
+      { id: 4, nombre: 'Teamwork', nombreEs: 'Trabajo en equipo' },
+      { id: 5, nombre: 'Working under pressure', nombreEs: 'Trabajar bajo presión' },
+      { id: 6, nombre: 'Passion for software development', nombreEs: 'Pasión al desarrollo de software' },
+      { id: 7, nombre: 'Adaptability', nombreEs: 'Adaptabilidad' },
+      { id: 8, nombre: 'Creativity', nombreEs: 'Creatividad' },
+      { id: 9, nombre: '...' },
     ],
     cursos: [
+      { id: 10, nombre: 'React Native' },
       { id: 1, nombre: 'Linux Administrator' },
       { id: 2, nombre: 'React JS, Strapi, Mongo' },
       { id: 3, nombre: 'Semantic UI + React' },
@@ -111,10 +123,10 @@ const Datos = (function () {
       { id: 9, nombre: 'CSS 3' }
     ],
     pasatiempos: [
-      { id: 1, nombreEn: 'Technologies', nombreEs: 'Tecnologías' },
-      { id: 2, nombreEn: 'Sports', nombreEs: 'Deporte' },
-      { id: 3, nombreEn: 'Books', nombreEs: 'Libros' },
-      { id: 4, nombreEn: 'Music', nombreEs: 'Musica' }
+      { id: 1, nombre: 'Technologies', nombreEs: 'Tecnologías' },
+      { id: 2, nombre: 'Sports', nombreEs: 'Deporte' },
+      { id: 3, nombre: 'Books', nombreEs: 'Libros' },
+      { id: 4, nombre: 'Music', nombreEs: 'Musica' }
     ]
   };
 })();

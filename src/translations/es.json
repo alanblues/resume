@@ -17,7 +17,8 @@
         "languages": "Lenguajes",
         "skills": "Habilidades",
         "courses": "Cursos",
-        "hobbies": "Pasatiempos"
+        "hobbies": "Pasatiempos",
+        "softskills": "Habilidades blandas"
     },
     "idiom": {
         "spanish": "Español (Nativo)",

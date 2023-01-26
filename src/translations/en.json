@@ -17,7 +17,8 @@
         "languages": "Languages",
         "skills": "Main Skills",
         "courses": "Courses",
-        "hobbies": "Hobbies"
+        "hobbies": "Hobbies",
+        "softskills": "Softskills"
     },
     "idiom": {
         "spanish": "Spanish (Native)",

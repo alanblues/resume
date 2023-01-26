@@ -6,8 +6,6 @@ import Datos from '.././../utilities/datos';
 
 export default function Interests() {
   const { t, i18n } = useTranslation("global");
-  const language = i18n.language;
-
   return (
     <>
       <Collapsable title={t("label.languages")}>
@@ -23,6 +21,12 @@ export default function Interests() {
         </ListaHabilidades>
       </Collapsable>
 
+      <Collapsable title={t("label.softskills")}>
+        <ListaHabilidades envuelto>
+          {<Presentador datos={Datos.softskills} />}
+        </ListaHabilidades>
+      </Collapsable>
+
       <Collapsable title={t("label.courses")}>
         <ListaHabilidades>
           {<Presentador datos={Datos.cursos} />}
@@ -31,21 +35,22 @@ export default function Interests() {
 
       <Collapsable title={t("label.hobbies")}>
         <ListaHabilidades>
-          {
-            Datos.pasatiempos.map(hob => (
-              <Habilidad key={hob.id}>
-                {language === 'en' ? hob.nombreEn : hob.nombreEs}
-              </Habilidad>
-            ))
-          }
+        {<Presentador datos={Datos.pasatiempos} />}
         </ListaHabilidades>
       </Collapsable>
     </>
   );
 }
 
-const Presentador = datos => (
-  datos.datos.map(hab => (
-    <Habilidad key={hab.id}>{hab.nombre}</Habilidad>)
-  )
-);
+const Presentador = datos => {
+  const { i18n } = useTranslation("global");
+  const language = i18n.language;
+
+  return (
+    datos.datos.map(hab => (
+      <Habilidad key={hab.id}>
+        {language === 'en' ? hab.nombre : !hab.nombreEs ? hab.nombre : hab.nombreEs}
+      </Habilidad>
+    ))
+  );
+} 
