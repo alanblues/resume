@@ -8,6 +8,9 @@ const Titulo = styled.h3`
     font-size: 25px;
     letter-spacing: -1px;
     margin-bottom: 15px;
+    @media only screen and (max-width: 767px) {
+        font-size: 22px;
+    }
 `;
 const Section = ({ titulo }) => <Titulo>{titulo}</Titulo>;
 

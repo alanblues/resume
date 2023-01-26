@@ -28,12 +28,9 @@ export const Fotografia = styled.img`
 
 export const Descripcion = styled.div`
   margin-left: 25px;
-  font-size: 15px;
 
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
+  h2 {font-size: 25px;}
+
   article p {
     margin-bottom: 8px;
     text-align: justify;

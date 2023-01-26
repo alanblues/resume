@@ -8,7 +8,7 @@ import { colores } from '../scss/colores';
 
 const Titulo = styled.h3`
     color: ${colores.principal};
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     border-bottom: 1px solid gainsboro;
     margin-bottom: 10px;

@@ -12,7 +12,6 @@ import {
 
 export default function Education() {
   const { t } = useTranslation("global");
-  // console.log(i18n.language);
 
   return (
     <Educacion>

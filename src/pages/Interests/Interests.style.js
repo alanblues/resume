@@ -13,11 +13,10 @@ export const ListaHabilidades = styled.div`
 `;
 
 export const Habilidad = styled.span`
-  background-color: #e8e8e8;
+  background-color: #f2f3f4;
   margin-right: 5px;
   padding: 3px 7px;
   border-radius: 4px;
-  font-size: 15px;
   margin-bottom: 5px;
   display: block;
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colores } from "../../scss/colores";
+import { colores, sizes } from "../../scss/colores";
 
 export const Educacion = styled.section`
   border-bottom: 1px solid ${colores.linea};
@@ -19,10 +19,10 @@ export const Titulo = styled.div`
 `;
 
 export const Carrera = styled.h2`
-  font-size: 1rem;
+  margin-top: -5px;
+  font-size: ${sizes.title};
   color: ${colores.titulo};
   font-weight: 700;
-  margin-top: -5px;
 `;
 
 export const Universidad = styled.span`
@@ -31,8 +31,5 @@ export const Universidad = styled.span`
 
 export const Periodo = styled.span`
   color: ${colores.secundario};
-  font-size: 14px;
-  // @media only screen and (max-width: 750px) {
-  //   background-color: pink;
-  // }
+  font-size: ${sizes.periodos};
 `;

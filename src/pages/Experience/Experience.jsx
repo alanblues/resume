@@ -10,40 +10,43 @@ import {
   Empresa, Lugar, Antiguedad, LugarFechaMobile, SeccionIntereses
 } from './Experience.style';
 
-
 export default function Experience() {
   const { isMobile } = useBreakpoints();
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+  const language = i18n.language;
 
   return (
     <ExperienciaIntereses>
       <div className="row">
         <section className="col-md-8 mb-sm-15">
-          <Section titulo={t("label.education")} />
+          <Section titulo={t("label.experience")} />
+
           {isMobile ?
-            Datos.empleos().map(emp =>
+            Datos.empleos.map(emp =>
               <CollapsableWork key={emp.id} titulo={
                 <DatosEmpresa>
-                  <Puesto>{emp.puesto}</Puesto>
+                  <Puesto>{language === 'en' ? emp.puesto : emp.puestoEs}</Puesto>
                   <Empresa>{emp.compania}</Empresa>
                 </DatosEmpresa>
               }>
                 <LugarFechaMobile>
                   <Lugar>{emp.lugar}</Lugar>
-                  <Antiguedad>{emp.antiguedad}</Antiguedad>
+                  <Antiguedad>{language === 'en' ? emp.antiguedad : emp.antiguedadEs}</Antiguedad>
                 </LugarFechaMobile>
-                <p className="mt-2">{emp.descripcion}</p>
+                <div className="mt-3" dangerouslySetInnerHTML={{ __html: language === 'en' ? emp.descripcion : emp.descEs}}>
+                </div>
               </CollapsableWork>
             ) :
-            Datos.empleos().map(emp =>
+            Datos.empleos.map(emp =>
               <Experiencia key={emp.id}>
                 <DatosEmpresa>
-                  <Puesto>{emp.puesto}</Puesto>
+                  <Puesto>{language === 'en' ? emp.puesto : emp.puestoEs}</Puesto>
                   <Empresa>{emp.compania}</Empresa>
                   <Lugar>{emp.lugar}</Lugar>
                 </DatosEmpresa>
-                <Antiguedad>{emp.antiguedad}</Antiguedad>
-                <p className="mt-3">{emp.descripcion}</p>
+                <Antiguedad>{language === 'en' ? emp.antiguedad : emp.antiguedadEs}</Antiguedad>
+                <div className="mt-3" dangerouslySetInnerHTML={{ __html: language === 'en' ? emp.descripcion : emp.descEs}}>
+                </div>
               </Experiencia>
             )
           }

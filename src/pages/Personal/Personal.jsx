@@ -20,7 +20,6 @@ export default function Personal() {
           <Nombre>Alan Parra</Nombre>
           <Profesion>{t("personal.caree")}</Profesion>
         </div>
-
         <DatosContacto>
           <Contacto>
             <FontAwesomeIcon icon={faPhone} />&nbsp;&nbsp;

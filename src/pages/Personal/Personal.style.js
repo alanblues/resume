@@ -19,7 +19,6 @@ export const DatosPersonales = styled.section`
 export const Nombre = styled.h1`
   color: ${colores.principal};
   letter-spacing: -1px;
-  font-weight: 700;
 `;
 
 export const Profesion = styled.h2`
@@ -41,12 +40,12 @@ export const DatosContacto = styled.div`
 `;
 
 export const Contacto = styled.article`
-  font-size: 16px;
   color: ${colores.secundario};
   a {
     color: ${colores.secundario};
     text-decoration: none;
-    border-bottom: 1px solid ${colores.linea};;
+    border-bottom: 1px solid ${colores.linea};
+    font-size: 17px;
     &:hover {
       color: #54b689;
       border-color: #54b689;
@@ -55,6 +54,6 @@ export const Contacto = styled.article`
 `;
 
 export const Ubicacion = styled.span`
-  font-size: 15px;
+  font-size: 17px;
   color: #797d7f;
 `;

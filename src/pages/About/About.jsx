@@ -5,30 +5,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useBreakpoints } from "../../hooks/useBreakpoints";
-
-const Titulo = styled.h3`
-    display: flex;
-    cursor: pointer;
-    border-bottom: 1px solid gainsboro;
-    margin-top: 10px;
-    align-items: baseline;
-    h2 { font-size: 1.5rem; }
-    svg {
-        margin-right: 13px;
-        font-size: 16px;
-    }
-`;
+import { colores } from '../../scss/colores';
 
 export default function Personal() {
     const { isMobile } = useBreakpoints();
     const { t } = useTranslation("global");
-    const [para] = useState("<p style='color: red'>hola mundo</p><p>hola mundo dos</p>");
+
     return (
         <DatosProfesionales>
             <Fotografia src={"./assets/img/yo.jpeg"} alt="Fotografia" />
             <Carrera>
                 <h1>Alan Parra</h1>
-                <p>{t("personal.caree")}</p>
+                <h5>{t("personal.caree")}</h5>
             </Carrera>
             {
                 !isMobile ? (
@@ -46,6 +34,22 @@ export default function Personal() {
         </DatosProfesionales>
     )
 };
+
+const Titulo = styled.div`
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid gainsboro;
+    margin: 10px 0 12px;
+    align-items: baseline;
+    color: ${colores.principal};
+    h2 {
+        font-size: 23px;
+    }
+    svg {
+        margin-right: 13px;
+        font-size: 16px;
+    }
+`;
 
 const Collapsable = ({ children }) => {
     const [collapse, setCollapse] = useState(true);
