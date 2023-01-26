@@ -12,6 +12,6 @@ export const colores = {
 };
 
 export const sizes = {
-    title: '18px',
+    title: '16px',
     periodos: '15px'
 }

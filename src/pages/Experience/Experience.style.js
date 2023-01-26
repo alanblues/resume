@@ -35,7 +35,7 @@ export const Puesto = styled.h2`
 
 export const Empresa = styled.span`
   color: #599cc8;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 8px;
   margin-top: -5px;
