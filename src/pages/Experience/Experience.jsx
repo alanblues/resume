@@ -11,7 +11,7 @@ import {
 } from './Experience.style';
 
 export default function Experience() {
-  const { isMobile, isTablet } = useBreakpoints();
+  const { isMobile } = useBreakpoints();
   const { t, i18n } = useTranslation("global");
   const language = i18n.language;
 
@@ -20,8 +20,6 @@ export default function Experience() {
       <div className="row">
         <section className="col-md-8 mb-sm-15">
           <Section titulo={t("label.experience")} />
-
-          {isTablet && <p>aqui</p>}
 
           {isMobile ?
             Datos.empleos.map(emp =>
