@@ -5,7 +5,7 @@ import { ListaHabilidades, Habilidad } from "./Interests.style";
 import Datos from '.././../utilities/datos';
 
 export default function Interests() {
-  const { t, i18n } = useTranslation("global");
+  const { t } = useTranslation("global");
   return (
     <>
       <Collapsable title={t("label.languages")}>

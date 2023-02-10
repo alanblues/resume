@@ -6,22 +6,17 @@ const Idioms = () => {
     const [lenguaje, setLenguaje] = useState("en");
     const {i18n} = useTranslation("global");
 
-    const onChangeEs = () => {
-      setLenguaje("es");
-      i18n.changeLanguage("es");
-    }
-
-    const onChangeEn = () => {
-      setLenguaje("en");
-      i18n.changeLanguage("en");
+    const onChangeLanguage = (lang) => {
+      setLenguaje(lang);
+      i18n.changeLanguage(lang);
     }
 
     return (
         <Lenguajes>
-          <Lenguaje lan={lenguaje === "es" ? true : false } onClick={onChangeEs}>
+          <Lenguaje lan={lenguaje === "es" } onClick={() => onChangeLanguage("es")}>
             Es
           </Lenguaje>
-          <Lenguaje lan={lenguaje === "en" ? true : false } onClick={onChangeEn}>
+          <Lenguaje lan={lenguaje === "en" } onClick={() => onChangeLanguage("en")}>
             En
           </Lenguaje>
       </Lenguajes>
