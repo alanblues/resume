@@ -19,12 +19,6 @@ export const Imagen = styled.figure`
   }
 `
 
-export const Nombre = styled.h2`
-  margin-bottom: 0px;
-  font-weight: bold;
-  letter-spacing: -1px;
-`;
-
 export const Especialidades = styled.div`
   span:not(:last-child):after {
     content: ' / ';
