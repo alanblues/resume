@@ -4,7 +4,7 @@ export const Adaptativa = styled.div`
   width: 70%;
   margin: 15px auto 20px;
   box-shadow: 0px 1px 9px gainsboro;
-  padding: 40px;
+  padding: 30px;
   border-radius: 5px;
   background-color: #fff;
 
