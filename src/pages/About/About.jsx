@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionAcercade, Imagen, Especialidades } from './About.style';
+import { SectionAcercade, Imagen, Especialidades, Nombre } from './About.style';
 import { useBreakpoints } from "../../hooks/useBreakpoints";
 
 export default function Personal() {
@@ -10,7 +10,7 @@ export default function Personal() {
             <Imagen>
                 <img src="./assets/img/yo.jpeg" alt="picture" />
             </Imagen>
-            {isMobile && <h2>Alan Parra</h2>}
+            {isMobile && <Nombre>Alan Parra</Nombre>}
             <Especialidades>
                 <span>Software Developer</span>
                 <span>Front-end</span>

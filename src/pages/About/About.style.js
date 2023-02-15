@@ -19,6 +19,11 @@ export const Imagen = styled.figure`
   }
 `
 
+export const Nombre = styled.h2`
+  font-weight: bold;
+  margin-bottom: 0px;
+`
+
 export const Especialidades = styled.div`
   span:not(:last-child):after {
     content: ' / ';
