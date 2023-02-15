@@ -14,6 +14,6 @@ export const Adaptativa = styled.div`
   }
 
   @media only screen and (max-width: 460px) {
-    padding: 40px 25px;
+    padding: 30px 19px;
   }
 `;
