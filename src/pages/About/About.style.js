@@ -14,7 +14,7 @@ export const Imagen = styled.figure`
   img {
     width: 132px;
     height: 167px;
-    border-radius: 50%;
+    border-radius: 30px;
     border: 1px solid gainsboro;
   }
 `
